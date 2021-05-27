@@ -98,7 +98,7 @@ function setupSearch() {
                 search.classList.add('hidden');
                 search.classList.remove('has-results');
             }
-        } else if (searchValue.length > 2) {
+        } else if (searchValue.length >= 2) {
             // search for less than 3 characters can display too much results
             search.innerHTML = '';
             menu.style.display = 'none';
